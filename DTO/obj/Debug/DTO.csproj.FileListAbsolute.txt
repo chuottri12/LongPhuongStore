@@ -1,0 +1,15 @@
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\DTO\bin\Debug\DTO.dll
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\DTO\bin\Debug\DTO.pdb
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\DTO\obj\Debug\DTO.dll
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\DTO\obj\Debug\DTO.pdb
+E:\HIEP\HieubanhDatai\DTO\bin\Debug\DTO.dll
+E:\HIEP\HieubanhDatai\DTO\bin\Debug\DTO.pdb
+E:\HIEP\HieubanhDatai\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+E:\HIEP\HieubanhDatai\DTO\obj\Debug\DTO.dll
+E:\HIEP\HieubanhDatai\DTO\obj\Debug\DTO.pdb
+F:\Backup\HieubanhDatai\HieubanhDatai\DTO\bin\Debug\DTO.dll
+F:\Backup\HieubanhDatai\HieubanhDatai\DTO\bin\Debug\DTO.pdb
+F:\Backup\HieubanhDatai\HieubanhDatai\DTO\obj\Debug\DTO.dll
+F:\Backup\HieubanhDatai\HieubanhDatai\DTO\obj\Debug\DTO.pdb
+F:\Backup\HieubanhDatai\HieubanhDatai\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache

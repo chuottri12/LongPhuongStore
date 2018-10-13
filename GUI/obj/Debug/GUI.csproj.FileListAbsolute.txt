@@ -1,0 +1,143 @@
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\bin\Debug\GUI.exe.config
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\bin\Debug\GUI.exe
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\bin\Debug\GUI.pdb
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\bin\Debug\BUS.dll
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\bin\Debug\DTO.dll
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\bin\Debug\DAL.dll
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\bin\Debug\BUS.pdb
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\bin\Debug\DTO.pdb
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\bin\Debug\DAL.pdb
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.Form1.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.exe
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.pdb
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.FrmMain.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UCLoainv.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UCNhanvien.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UCLoaihoadon.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UCDoimatkhau.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UCLuong.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UCLoaibanh.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UCBanh.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UCDanhsachbanh.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UCLoainguyenlieu.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UCNguyenlieu.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UC_Dsnguyenlieu.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UCCongthucbanh.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UCKhachhang.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UCHoadon.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.UCChitiethoadon.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.FrBCDanhsachnhanvien.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\RdlCompile.cache
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\RdlCompile.compiled
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.FrBCDanhsachkhachhang.resources
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\GUI\obj\Debug\GUI.FrBCLuongthangnv.resources
+D:\HIEP\HieubanhDatai\GUI\bin\Debug\GUI.exe.config
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.exe
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.pdb
+D:\HIEP\HieubanhDatai\GUI\bin\Debug\GUI.exe
+D:\HIEP\HieubanhDatai\GUI\bin\Debug\GUI.pdb
+D:\HIEP\HieubanhDatai\GUI\bin\Debug\BUS.dll
+D:\HIEP\HieubanhDatai\GUI\bin\Debug\DTO.dll
+D:\HIEP\HieubanhDatai\GUI\bin\Debug\DAL.dll
+D:\HIEP\HieubanhDatai\GUI\bin\Debug\BUS.pdb
+D:\HIEP\HieubanhDatai\GUI\bin\Debug\DTO.pdb
+D:\HIEP\HieubanhDatai\GUI\bin\Debug\DAL.pdb
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.Form1.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.FrBCDanhsachkhachhang.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.FrBCDanhsachnhanvien.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.FrBCLuongthangnv.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.FrmMain.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCBanh.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCChitiethoadon.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCCongthucbanh.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCDanhsachbanh.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCHoadon.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCKhachhang.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCLoaibanh.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCLoaihoadon.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCLoainguyenlieu.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCLoainv.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCLuong.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCNguyenlieu.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCNhanvien.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCDoimatkhau.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UC_Dsnguyenlieu.resources
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\RdlCompile.cache
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\RdlCompile.compiled
+D:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.FrInHoadon.resources
+E:\HIEP\HieubanhDatai\GUI\bin\Debug\GUI.exe.config
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.exe
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.pdb
+E:\HIEP\HieubanhDatai\GUI\bin\Debug\GUI.exe
+E:\HIEP\HieubanhDatai\GUI\bin\Debug\GUI.pdb
+E:\HIEP\HieubanhDatai\GUI\bin\Debug\BUS.dll
+E:\HIEP\HieubanhDatai\GUI\bin\Debug\DTO.dll
+E:\HIEP\HieubanhDatai\GUI\bin\Debug\DAL.dll
+E:\HIEP\HieubanhDatai\GUI\bin\Debug\BUS.pdb
+E:\HIEP\HieubanhDatai\GUI\bin\Debug\DTO.pdb
+E:\HIEP\HieubanhDatai\GUI\bin\Debug\DAL.pdb
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.Form1.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.FrBCDanhsachkhachhang.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.FrBCDanhsachnhanvien.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.FrBCLuongthangnv.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.FrInHoadon.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.FrmMain.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.Properties.Resources.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCBanh.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCChitiethoadon.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCCongthucbanh.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCDanhsachbanh.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCHoadon.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCKhachhang.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCLoaibanh.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCLoaihoadon.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCLoainguyenlieu.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCLoainv.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCLuong.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCNguyenlieu.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCNhanvien.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UCDoimatkhau.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.UC_Dsnguyenlieu.resources
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\RdlCompile.cache
+E:\HIEP\HieubanhDatai\GUI\obj\Debug\RdlCompile.compiled
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\bin\Debug\GUI.exe.config
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\bin\Debug\GUI.exe
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\bin\Debug\GUI.pdb
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\bin\Debug\BUS.dll
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\bin\Debug\DTO.dll
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\bin\Debug\DAL.dll
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\bin\Debug\BUS.pdb
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\bin\Debug\DTO.pdb
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\bin\Debug\DAL.pdb
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.Form1.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.FrBCDanhsachkhachhang.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.FrBCDanhsachnhanvien.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.FrBCLuongthangnv.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.FrInHoadon.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.FrmMain.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.Properties.Resources.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.UCKhachhang.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.UCLoainv.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.UCNhanvien.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.UCDoimatkhau.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\RdlCompile.cache
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\RdlCompile.compiled
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.exe
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.pdb
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.FrmHienThiChinh.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.UCMatHang.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.UCQLHoaDon.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.UCHoadonBan.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.UCLoaiMatHang.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.UCNhaPP.resources
+F:\Backup\HieubanhDatai\HieubanhDatai\GUI\obj\Debug\GUI.UCQuarter.resources

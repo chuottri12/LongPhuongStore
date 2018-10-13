@@ -1,0 +1,32 @@
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\DAL\bin\Debug\DAL.dll
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\DAL\bin\Debug\DAL.pdb
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\DAL\bin\Debug\DTO.dll
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\DAL\bin\Debug\DTO.pdb
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\DAL\obj\Debug\DAL.dll
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\DAL\obj\Debug\DAL.pdb
+D:\HIEP\NAM 3-KY 2\C#\HieubanhDatai\DAL\bin\Debug\DAL.dll.config
+D:\HIEP\HieubanhDatai\DAL\bin\Debug\DAL.dll.config
+D:\HIEP\HieubanhDatai\DAL\bin\Debug\DAL.dll
+D:\HIEP\HieubanhDatai\DAL\bin\Debug\DAL.pdb
+D:\HIEP\HieubanhDatai\DAL\bin\Debug\DTO.dll
+D:\HIEP\HieubanhDatai\DAL\bin\Debug\DTO.pdb
+D:\HIEP\HieubanhDatai\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\HIEP\HieubanhDatai\DAL\obj\Debug\DAL.dll
+D:\HIEP\HieubanhDatai\DAL\obj\Debug\DAL.pdb
+E:\HIEP\HieubanhDatai\DAL\bin\Debug\DAL.dll.config
+E:\HIEP\HieubanhDatai\DAL\bin\Debug\DAL.dll
+E:\HIEP\HieubanhDatai\DAL\bin\Debug\DAL.pdb
+E:\HIEP\HieubanhDatai\DAL\bin\Debug\DTO.dll
+E:\HIEP\HieubanhDatai\DAL\bin\Debug\DTO.pdb
+E:\HIEP\HieubanhDatai\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\HIEP\HieubanhDatai\DAL\obj\Debug\DAL.dll
+E:\HIEP\HieubanhDatai\DAL\obj\Debug\DAL.pdb
+F:\Backup\HieubanhDatai\HieubanhDatai\DAL\bin\Debug\DAL.dll.config
+F:\Backup\HieubanhDatai\HieubanhDatai\DAL\bin\Debug\DAL.dll
+F:\Backup\HieubanhDatai\HieubanhDatai\DAL\bin\Debug\DAL.pdb
+F:\Backup\HieubanhDatai\HieubanhDatai\DAL\bin\Debug\DTO.dll
+F:\Backup\HieubanhDatai\HieubanhDatai\DAL\bin\Debug\DTO.pdb
+F:\Backup\HieubanhDatai\HieubanhDatai\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\Backup\HieubanhDatai\HieubanhDatai\DAL\obj\Debug\DAL.dll
+F:\Backup\HieubanhDatai\HieubanhDatai\DAL\obj\Debug\DAL.pdb
