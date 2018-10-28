@@ -51,6 +51,10 @@ namespace GUI
             {
                 setDataDetail(0);
             }
+            else
+            {
+                setDataDetailNull();
+            }
         }
 
         public void setDisplayTableView()
@@ -67,10 +71,12 @@ namespace GUI
                     dgvEmploy.Rows.Add(employ.Key, employ.Value.emPloyName, quarter.quarterName);
                     employIdText.Text = employ.Value.emPloyId.ToString();
                 }
+                setDataDetail(0);
             }
             else
             {
                 this.statusLabel.Visible = true;
+                setDataDetailNull();
             }
         }
 
@@ -108,6 +114,7 @@ namespace GUI
                 setDataWithQuarterId(quarter.quarterId);
                 setDataForEmployName(quarter.quarterId);
                 setDataForEmployId(quarter.quarterId);
+                
             }
             else
             {
@@ -132,10 +139,12 @@ namespace GUI
                     dgvEmploy.Rows.Add(employ.Key, employ.Value.emPloyName, quarter.quarterName);
                     employIdText.Text = employ.Value.emPloyId.ToString();
                 }
+                setDataDetailWithQuarterId(quarterId, 0);
             }
             else
             {
                 this.statusLabel.Visible = true;
+                setDataDetailNull();
             }
         }
 
@@ -167,6 +176,14 @@ namespace GUI
                                     + "%' And Employ_Name Like '%" + searchEmployNameText.Text + "%'";
             }
             setDataAfterSearch(stringSql);
+            if (this.dgvEmploy.Rows.Count > 0)
+            {
+                setDataDetail(0);
+            }
+            else
+            {
+                setDataDetailNull();
+            }
         }
 
         private void setDataAfterSearch(string stringSql)
@@ -247,14 +264,40 @@ namespace GUI
         private void setDataDetail(int index)
         {
             EmployeeModel employModel = busEmploy.convertDatatable2Dict().ElementAt(index).Value;
-            this.employIdText.Text              = employModel.emPloyId;
-            this.employAccountText.Text         = employModel.emPloyAccount;
-            this.employAddressText.Text         = employModel.emPloyAddress;
-            this.employNameText.Text            = employModel.emPloyName;
-            this.employPhoneNumberText.Text     = employModel.emPloyNumberPhone;
-            this.employSalaryText.Text          = employModel.emPloySalary.ToString();
-            this.quarterIdText.Text             = employModel.quarterId;
+            this.employIdText.Text              = employModel.emPloyId.Trim();
+            this.employAccountText.Text         = employModel.emPloyAccount.Trim();
+            this.employAddressText.Text         = employModel.emPloyAddress.Trim();
+            this.employNameText.Text            = employModel.emPloyName.Trim();
+            this.employPhoneNumberText.Text     = employModel.emPloyNumberPhone.Trim();
+            this.employSalaryText.Text          = employModel.emPloySalary.ToString().Trim();
+            this.quarterIdText.Text             = employModel.quarterId.Trim();
             this.setDataForRadioButton(employModel.emPloySex);
+        }
+
+        private void setDataDetailWithQuarterId(string quarterId, int index)
+        {
+            EmployeeModel employModel = busEmploy.convertDatatableWithQuartId2Dict(quarterId).ElementAt(index).Value;
+            this.employIdText.Text = employModel.emPloyId.Trim();
+            this.employAccountText.Text = employModel.emPloyAccount.Trim();
+            this.employAddressText.Text = employModel.emPloyAddress.Trim();
+            this.employNameText.Text = employModel.emPloyName.Trim();
+            this.employPhoneNumberText.Text = employModel.emPloyNumberPhone.Trim();
+            this.employSalaryText.Text = employModel.emPloySalary.ToString().Trim();
+            this.quarterIdText.Text = employModel.quarterId.Trim();
+            this.setDataForRadioButton(employModel.emPloySex);
+        }
+
+        private void setDataDetailNull()
+        {
+            this.employIdText.Text = "";
+            this.employAccountText.Text ="";
+            this.employAddressText.Text = "";
+            this.employNameText.Text = "";
+            this.employPhoneNumberText.Text = "";
+            this.employSalaryText.Text = "";
+            this.quarterIdText.Text = "";
+            this.employFemaleRadio.Checked = false;
+            this.employMaleRadio.Checked = false;
         }
 
         private void setDataForRadioButton(bool male)

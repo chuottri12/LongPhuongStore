@@ -30,5 +30,10 @@ namespace BUS
         {
             return dalProductType.delete(productType);
         }
+
+        public Dictionary<string, ProductTypeModel> convertDatatable2Dict()
+        {
+            return dalProductType.convertDatatable2Dict(getAllData());
+        }
     }
 }

@@ -69,32 +69,6 @@ namespace GUI
         }
 
         /**
-         * @name    Add
-         * 
-         * @param   byte, byte
-         * 
-         * @author  TriCV
-         * 
-         * @note    Add value to a byte array
-         * 
-         * @date    2018/Jun/16
-         */
-        /*
-                byte[] Add(byte[] array, byte newValue)
-                {
-                    int newLength = array.Length + 1;
-
-                    byte[] result = new byte[newLength];
-
-                    for (int i = 0; i < array.Length; i++)
-                        result[i] = array[i];
-
-                    result[newLength - 1] = newValue;
-
-                    return result;
-                }
-        */
-        /**
         * @name    setFlagUserControl
         * 
         * @param byte

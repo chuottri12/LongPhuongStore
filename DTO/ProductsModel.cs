@@ -36,15 +36,6 @@ namespace DTO
             set { this._productTypeId = value; }
         }
 
-        /*
-        private int _Hansudung;
-        public int Hansudung
-        {
-            get { return _Hansudung; }
-            set {_Hansudung =value; }
-        }
-        */
-
         public float productPurchasePrice
         {
             get { return this._productPurchasePrice; }

@@ -50,5 +50,20 @@ namespace BUS
         {
             return dalProduct.delete(productList);
         }
+
+        public Dictionary<string, ProductsModel> convertDatatable2Dict()
+        {
+            return dalProduct.convertDatatable2Dict(getAllData());
+        }
+
+        public Dictionary<string, ProductsModel> convertDatatableWithproductType2Dict(string productId)
+        {
+            return dalProduct.convertDatatable2Dict(getDataWithProductType(productId));
+        }
+
+        public int getTotalProduct()
+        {
+            return getAllData().Rows.Count;
+        }
     }
 }

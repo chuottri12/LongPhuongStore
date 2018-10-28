@@ -28,32 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tblmaloaibanh = new System.Windows.Forms.TextBox();
-            this.dgloaibanh = new System.Windows.Forms.DataGridView();
+            this.dgvProductType = new System.Windows.Forms.DataGridView();
             this.tbltenloaibanh = new System.Windows.Forms.TextBox();
-            this.bttimkiem = new System.Windows.Forms.Button();
-            this.btdanhsach = new System.Windows.Forms.Button();
+            this.searchButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btluu = new System.Windows.Forms.Button();
-            this.bthuy = new System.Windows.Forms.Button();
-            this.btxoa = new System.Windows.Forms.Button();
-            this.btsua = new System.Windows.Forms.Button();
-            this.btthem = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.editButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbmaloaibanh = new System.Windows.Forms.TextBox();
-            this.tbtenloaibanh = new System.Windows.Forms.TextBox();
-            this.tbmota = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgloaibanh)).BeginInit();
+            this.ProductType_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductType_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductType_Notice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductType)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -68,152 +64,157 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(66, 43);
+            this.label3.Location = new System.Drawing.Point(59, 43);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 23);
+            this.label3.Size = new System.Drawing.Size(187, 23);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Mã loại bánh";
+            this.label3.Text = "Mã loại mặt hàng";
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(360, 43);
+            this.label5.Location = new System.Drawing.Point(59, 90);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 23);
+            this.label5.Size = new System.Drawing.Size(187, 23);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Tên loại bánh";
+            this.label5.Text = "Tên loại mặt hàng";
             // 
             // tblmaloaibanh
             // 
-            this.tblmaloaibanh.Location = new System.Drawing.Point(175, 40);
+            this.tblmaloaibanh.Location = new System.Drawing.Point(268, 40);
             this.tblmaloaibanh.Name = "tblmaloaibanh";
-            this.tblmaloaibanh.Size = new System.Drawing.Size(138, 27);
+            this.tblmaloaibanh.Size = new System.Drawing.Size(267, 32);
             this.tblmaloaibanh.TabIndex = 2;
             // 
-            // dgloaibanh
+            // dgvProductType
             // 
-            this.dgloaibanh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgloaibanh.Location = new System.Drawing.Point(37, 77);
-            this.dgloaibanh.Name = "dgloaibanh";
-            this.dgloaibanh.Size = new System.Drawing.Size(870, 177);
-            this.dgloaibanh.TabIndex = 0;
-            this.dgloaibanh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgloaibanh_CellClick);
+            this.dgvProductType.AllowUserToAddRows = false;
+            this.dgvProductType.AllowUserToResizeRows = false;
+            this.dgvProductType.BackgroundColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProductType.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvProductType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProductType.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ProductType_Id,
+            this.ProductType_Name,
+            this.ProductType_Notice});
+            this.dgvProductType.Location = new System.Drawing.Point(37, 130);
+            this.dgvProductType.Name = "dgvProductType";
+            this.dgvProductType.RowHeadersVisible = false;
+            this.dgvProductType.Size = new System.Drawing.Size(870, 342);
+            this.dgvProductType.TabIndex = 0;
+            this.dgvProductType.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgloaibanh_CellClick);
             // 
             // tbltenloaibanh
             // 
-            this.tbltenloaibanh.Location = new System.Drawing.Point(476, 40);
+            this.tbltenloaibanh.Location = new System.Drawing.Point(268, 87);
             this.tbltenloaibanh.Name = "tbltenloaibanh";
-            this.tbltenloaibanh.Size = new System.Drawing.Size(147, 27);
+            this.tbltenloaibanh.Size = new System.Drawing.Size(267, 32);
             this.tbltenloaibanh.TabIndex = 3;
             // 
-            // bttimkiem
+            // searchButton
             // 
-            this.bttimkiem.Location = new System.Drawing.Point(693, 35);
-            this.bttimkiem.Name = "bttimkiem";
-            this.bttimkiem.Size = new System.Drawing.Size(87, 36);
-            this.bttimkiem.TabIndex = 4;
-            this.bttimkiem.Text = "Tìm kiếm";
-            this.bttimkiem.UseVisualStyleBackColor = true;
-            this.bttimkiem.Click += new System.EventHandler(this.bttimkiem_Click);
-            // 
-            // btdanhsach
-            // 
-            this.btdanhsach.Location = new System.Drawing.Point(805, 35);
-            this.btdanhsach.Name = "btdanhsach";
-            this.btdanhsach.Size = new System.Drawing.Size(82, 36);
-            this.btdanhsach.TabIndex = 5;
-            this.btdanhsach.Text = "Toàn bộ";
-            this.btdanhsach.UseVisualStyleBackColor = true;
-            this.btdanhsach.Click += new System.EventHandler(this.btdanhsach_Click);
+            this.searchButton.Location = new System.Drawing.Point(618, 61);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(121, 36);
+            this.searchButton.TabIndex = 4;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.bttimkiem_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btdanhsach);
-            this.groupBox1.Controls.Add(this.bttimkiem);
+            this.groupBox1.Controls.Add(this.searchButton);
             this.groupBox1.Controls.Add(this.tbltenloaibanh);
-            this.groupBox1.Controls.Add(this.dgloaibanh);
+            this.groupBox1.Controls.Add(this.dgvProductType);
             this.groupBox1.Controls.Add(this.tblmaloaibanh);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(56, 101);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(934, 266);
+            this.groupBox1.Size = new System.Drawing.Size(934, 490);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Danh sách các loại bánh";
+            this.groupBox1.Text = "Danh sách các loại mặt hàng đang kinh doanh";
             // 
-            // btluu
+            // saveButton
             // 
-            this.btluu.BackColor = System.Drawing.SystemColors.Control;
-            this.btluu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btluu.ForeColor = System.Drawing.Color.Black;
-            this.btluu.Location = new System.Drawing.Point(65, 212);
-            this.btluu.Name = "btluu";
-            this.btluu.Size = new System.Drawing.Size(106, 41);
-            this.btluu.TabIndex = 5;
-            this.btluu.Text = "Lưu";
-            this.btluu.UseVisualStyleBackColor = false;
-            this.btluu.Click += new System.EventHandler(this.btluu_Click);
+            this.saveButton.BackColor = System.Drawing.SystemColors.Control;
+            this.saveButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButton.ForeColor = System.Drawing.Color.Black;
+            this.saveButton.Location = new System.Drawing.Point(65, 212);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(106, 41);
+            this.saveButton.TabIndex = 5;
+            this.saveButton.Text = "Lưu";
+            this.saveButton.UseVisualStyleBackColor = false;
+            this.saveButton.Click += new System.EventHandler(this.btluu_Click);
             // 
-            // bthuy
+            // cancelButton
             // 
-            this.bthuy.BackColor = System.Drawing.SystemColors.Control;
-            this.bthuy.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bthuy.ForeColor = System.Drawing.Color.Black;
-            this.bthuy.Location = new System.Drawing.Point(65, 296);
-            this.bthuy.Name = "bthuy";
-            this.bthuy.Size = new System.Drawing.Size(106, 41);
-            this.bthuy.TabIndex = 5;
-            this.bthuy.Text = "Hủy";
-            this.bthuy.UseVisualStyleBackColor = false;
-            this.bthuy.Click += new System.EventHandler(this.bthuy_Click);
+            this.cancelButton.BackColor = System.Drawing.SystemColors.Control;
+            this.cancelButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelButton.ForeColor = System.Drawing.Color.Black;
+            this.cancelButton.Location = new System.Drawing.Point(65, 296);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(106, 41);
+            this.cancelButton.TabIndex = 5;
+            this.cancelButton.Text = "Hủy";
+            this.cancelButton.UseVisualStyleBackColor = false;
+            this.cancelButton.Click += new System.EventHandler(this.bthuy_Click);
             // 
-            // btxoa
+            // deleteButton
             // 
-            this.btxoa.BackColor = System.Drawing.SystemColors.Control;
-            this.btxoa.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btxoa.ForeColor = System.Drawing.Color.Black;
-            this.btxoa.Location = new System.Drawing.Point(65, 379);
-            this.btxoa.Name = "btxoa";
-            this.btxoa.Size = new System.Drawing.Size(106, 41);
-            this.btxoa.TabIndex = 11;
-            this.btxoa.Text = "Xóa";
-            this.btxoa.UseVisualStyleBackColor = false;
-            this.btxoa.Click += new System.EventHandler(this.btxoa_Click);
+            this.deleteButton.BackColor = System.Drawing.SystemColors.Control;
+            this.deleteButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteButton.ForeColor = System.Drawing.Color.Black;
+            this.deleteButton.Location = new System.Drawing.Point(65, 379);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(106, 41);
+            this.deleteButton.TabIndex = 11;
+            this.deleteButton.Text = "Xóa";
+            this.deleteButton.UseVisualStyleBackColor = false;
+            this.deleteButton.Click += new System.EventHandler(this.btxoa_Click);
             // 
-            // btsua
+            // editButton
             // 
-            this.btsua.BackColor = System.Drawing.SystemColors.Control;
-            this.btsua.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btsua.ForeColor = System.Drawing.Color.Black;
-            this.btsua.Location = new System.Drawing.Point(65, 136);
-            this.btsua.Name = "btsua";
-            this.btsua.Size = new System.Drawing.Size(106, 41);
-            this.btsua.TabIndex = 6;
-            this.btsua.Text = "Sửa";
-            this.btsua.UseVisualStyleBackColor = false;
-            this.btsua.Click += new System.EventHandler(this.btsua_Click);
+            this.editButton.BackColor = System.Drawing.SystemColors.Control;
+            this.editButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editButton.ForeColor = System.Drawing.Color.Black;
+            this.editButton.Location = new System.Drawing.Point(65, 136);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(106, 41);
+            this.editButton.TabIndex = 6;
+            this.editButton.Text = "Sửa";
+            this.editButton.UseVisualStyleBackColor = false;
+            this.editButton.Click += new System.EventHandler(this.btsua_Click);
             // 
-            // btthem
+            // addButton
             // 
-            this.btthem.BackColor = System.Drawing.SystemColors.Control;
-            this.btthem.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btthem.ForeColor = System.Drawing.Color.Black;
-            this.btthem.Location = new System.Drawing.Point(65, 56);
-            this.btthem.Name = "btthem";
-            this.btthem.Size = new System.Drawing.Size(106, 41);
-            this.btthem.TabIndex = 7;
-            this.btthem.Text = "Thêm mới";
-            this.btthem.UseVisualStyleBackColor = false;
-            this.btthem.Click += new System.EventHandler(this.btthem_Click);
+            this.addButton.BackColor = System.Drawing.SystemColors.Control;
+            this.addButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.ForeColor = System.Drawing.Color.Black;
+            this.addButton.Location = new System.Drawing.Point(65, 56);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(106, 41);
+            this.addButton.TabIndex = 7;
+            this.addButton.Text = "Thêm mới";
+            this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.btthem_Click);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.btthem);
-            this.groupBox3.Controls.Add(this.btsua);
-            this.groupBox3.Controls.Add(this.btxoa);
-            this.groupBox3.Controls.Add(this.bthuy);
-            this.groupBox3.Controls.Add(this.btluu);
+            this.groupBox3.Controls.Add(this.addButton);
+            this.groupBox3.Controls.Add(this.editButton);
+            this.groupBox3.Controls.Add(this.deleteButton);
+            this.groupBox3.Controls.Add(this.cancelButton);
+            this.groupBox3.Controls.Add(this.saveButton);
             this.groupBox3.Location = new System.Drawing.Point(1046, 132);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(232, 459);
@@ -221,75 +222,34 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Chức năng";
             // 
-            // label6
+            // ProductType_Id
             // 
-            this.label6.Location = new System.Drawing.Point(74, 103);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 23);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Tên loại bánh";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ProductType_Id.DefaultCellStyle = dataGridViewCellStyle2;
+            this.ProductType_Id.HeaderText = "Mã loại sản phẩm";
+            this.ProductType_Id.Name = "ProductType_Id";
+            this.ProductType_Id.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ProductType_Id.Width = 150;
             // 
-            // label7
+            // ProductType_Name
             // 
-            this.label7.Location = new System.Drawing.Point(424, 41);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 23);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Mô tả";
+            this.ProductType_Name.HeaderText = "Tên mã loại sản phẩm";
+            this.ProductType_Name.Name = "ProductType_Name";
+            this.ProductType_Name.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ProductType_Name.Width = 200;
             // 
-            // label4
+            // ProductType_Notice
             // 
-            this.label4.Location = new System.Drawing.Point(74, 41);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 23);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Mã loại bánh";
-            // 
-            // tbmaloaibanh
-            // 
-            this.tbmaloaibanh.Location = new System.Drawing.Point(185, 41);
-            this.tbmaloaibanh.Name = "tbmaloaibanh";
-            this.tbmaloaibanh.Size = new System.Drawing.Size(195, 26);
-            this.tbmaloaibanh.TabIndex = 2;
-            // 
-            // tbtenloaibanh
-            // 
-            this.tbtenloaibanh.Location = new System.Drawing.Point(185, 103);
-            this.tbtenloaibanh.Name = "tbtenloaibanh";
-            this.tbtenloaibanh.Size = new System.Drawing.Size(195, 26);
-            this.tbtenloaibanh.TabIndex = 3;
-            // 
-            // tbmota
-            // 
-            this.tbmota.Location = new System.Drawing.Point(476, 38);
-            this.tbmota.Multiline = true;
-            this.tbmota.Name = "tbmota";
-            this.tbmota.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbmota.Size = new System.Drawing.Size(431, 121);
-            this.tbmota.TabIndex = 4;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.tbmota);
-            this.groupBox2.Controls.Add(this.tbtenloaibanh);
-            this.groupBox2.Controls.Add(this.tbmaloaibanh);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(56, 393);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(934, 178);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Thông tin chi tiết loại bánh";
+            this.ProductType_Notice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ProductType_Notice.HeaderText = "Ghi chú";
+            this.ProductType_Notice.Name = "ProductType_Notice";
+            this.ProductType_Notice.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // UCLoaiMatHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -298,12 +258,10 @@
             this.Name = "UCLoaiMatHang";
             this.Size = new System.Drawing.Size(1326, 655);
             this.Load += new System.EventHandler(this.UCLoaibanh_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgloaibanh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductType)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -314,23 +272,18 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tblmaloaibanh;
-        private System.Windows.Forms.DataGridView dgloaibanh;
+        private System.Windows.Forms.DataGridView dgvProductType;
         private System.Windows.Forms.TextBox tbltenloaibanh;
-        private System.Windows.Forms.Button bttimkiem;
-        private System.Windows.Forms.Button btdanhsach;
+        private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btluu;
-        private System.Windows.Forms.Button bthuy;
-        private System.Windows.Forms.Button btxoa;
-        private System.Windows.Forms.Button btsua;
-        private System.Windows.Forms.Button btthem;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button editButton;
+        private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbmaloaibanh;
-        private System.Windows.Forms.TextBox tbtenloaibanh;
-        private System.Windows.Forms.TextBox tbmota;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductType_Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductType_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductType_Notice;
     }
 }

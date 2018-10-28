@@ -18,298 +18,212 @@ namespace GUI
         {
             InitializeComponent();
         }
-        //-------------------------------------------BIẾN------------------------------------------
-        Boolean them;
-        BUS_Products busbanh = new BUS_Products();
-        BUS_Chuanhoaxau buschuanhoaxau = new BUS_Chuanhoaxau();
-        //-------------------------------------------HÀM-------------------------------------------
-        private void LoadData()
-        {/*
-            DataTable dt = new DataTable();
-            dt = busbanh.Danhsach();
-            dgbanh.DataSource = dt;
-            dgbanh.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgbanh.Columns["Mabanh"].HeaderText = "Mã bánh";
-            dgbanh.Columns["Mabanh"].Width = 150;
-            dgbanh.Columns["Tenbanh"].HeaderText = "Tên bánh";
-            dgbanh.Columns["Tenbanh"].Width = 150;
-            dgbanh.Columns["Maloaibanh"].HeaderText = "Mã loại bánh";
-            dgbanh.Columns["Maloaibanh"].Width = 150;
-            dgbanh.Columns["Tenloai"].HeaderText = "Tên loại bánh";
-            dgbanh.Columns["Tenloai"].Width = 150;
-            dgbanh.Columns["Hansudung"].HeaderText = "Hạn dùng";
-            dgbanh.Columns["Hansudung"].Width = 150;
-            dgbanh.Columns["Gia"].HeaderText = "Giá";
-            dgbanh.Columns["Gia"].Width = 200;
-            */
-        }
-        private void Nut(Boolean a)
-        {
-            
-            btthem.Enabled = a;
-            btsua.Enabled = a;
-            btxoa.Enabled = a;
-            dgbanh.Enabled = a;
-            tbmabanh.Enabled = a;
 
-            cbmaloaibanh.Enabled = !a;
-            bthuy.Enabled = !a;
-            btluu.Enabled = !a;
-        }
-        private void TextBNull()
-        {
-            tbmabanh.Text = "";
-            tbtenbanh.Text = "";
-            //tbtenloaibanh.Text = "";
-            cbmaloaibanh.Text = "";
-            tbGiaNhap.Text = "";
-            //tbhandung.Text = "";
-        }
-        private Boolean KiemTraThem()
-        {/*
-            if (tbtenbanh.Text == "")
-            {
-                MessageBox.Show("Điền vào tên bánh!", "Thông báo");
-                tbtenbanh.Focus();
-                return false;
-            }
-            else
-                if (cbmaloaibanh.Text == "")
-                {
-                    MessageBox.Show("Điền vào mã loại bánh!", "Thông báo");
-                    cbmaloaibanh.Focus();
-                    return false;
-                }
-                else
-                {
-                    DataTable dt = new DataTable();
-                    dt = busbanh.KiemtraMaloai(cbmaloaibanh.Text);
-                    if (dt.Rows.Count == 0)
-                    {
-                        MessageBox.Show("Mã loại bánh không tồn tại!", "Thông báo");
-                        cbmaloaibanh.Focus();
-                        return false;
-                    }
-                    else
-                    {
-                        if (tbhandung.Text == "")
-                        {
-                            MessageBox.Show("Điền vào hạn dùng cho bánh!", "Thông báo");
-                            tbhandung.Focus();
-                            return false;
-                        }
-                        else
-                            if (buschuanhoaxau.SoNguyen(tbhandung.Text) == false)
-                            {
-                                MessageBox.Show("Hạn dùng không hợp lệ!", "Thông báo");
-                                tbhandung.Focus();
-                                return false;
-                            }
-                            else
-                                if (int.Parse(tbhandung.Text) <=0)
-                                {
-                                    MessageBox.Show("Hạn dùng không hợp lệ!", "Thông báo");
-                                    tbhandung.Focus();
-                                    return false;
-                                }
-                                else
-                                    if (tbGiaNhap.Text == "")
-                                    {
-                                        MessageBox.Show("Điền vào giá của bánh!", "Thông báo");
-                                        tbGiaNhap.Focus();
-                                        return false;
-                                    }
-                                    else
-                                        if (buschuanhoaxau.SoLe(tbGiaNhap.Text) == false)
-                                        {
-                                            MessageBox.Show("Giá không hợp lệ!", "Thông báo");
-                                            tbGiaNhap.Focus();
-                                            return false;
-                                        }
-                                        else
-                                            if (float.Parse(tbGiaNhap.Text) <= 0)
-                                            {
-                                                MessageBox.Show("Giá không hợp lệ!", "Thông báo");
-                                                tbGiaNhap.Focus();
-                                                return false;
-                                            }
-                                            else
-                                            {
-                                                tbtenbanh.Text = buschuanhoaxau.Ten(tbtenbanh.Text);
-                                                return true;
-                                            }
-                    }
-                }*/
-            return true;
-        }
-        //-------------------------------------------MAIN------------------------------------------
+        BUS_Products busProduct = new BUS_Products();
+        BUS_ProductType busProductType = new BUS_ProductType();
+        BUS_Chuanhoaxau buschuanhoaxau = new BUS_Chuanhoaxau();
+        List<string> productTypeNameList = new List<string>();
 
         private void UCBanh_Load(object sender, EventArgs e)
         {
-            Nut(true);
-            LoadData();
-            cbmaloaibanh.DataSource = busbanh.getAllData();
-            cbmaloaibanh.DisplayMember = "Maloaibanh";
-            cbmaloaibanh.ValueMember = "Maloaibanh";
-            cbmaloaibanh.Text = "";
-            TextBNull();
+            this.setDataForProductId("All");
+            this.setDataForProductName("All");
+            this.setData2ProductTypeText();
+            this.loadData2DatagridView();
+            this.setData2ProductTypeCombobox(productTypeNameList);
+            searchProductId.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            searchProductId.AutoCompleteSource = AutoCompleteSource.CustomSource;
+
+            searchProductName.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            searchProductName.AutoCompleteSource = AutoCompleteSource.CustomSource;
+
+            productSummaryLabel.Text = busProduct.getTotalProduct().ToString();
         }
 
-        private void bttimkiem_Click(object sender, EventArgs e)
+        private void loadData2DatagridView()
         {
-            //dgbanh.DataSource = busbanh.TimKiem(tkmabanh.Text, tktenbanh.Text, tkmaloai.Text, tktenloaibanh.Text);
-        }
-
-        private void btdanhsach_Click(object sender, EventArgs e)
-        {
-            //LoadData();
-            //tktenloaibanh.Text = "";
-            //tktenbanh.Text = "";
-            //tkmaloai.Text = "";
-            //tkmabanh.Text = "";
-        }
-
-        private void btthem_Click(object sender, EventArgs e)
-        {
-            TextBNull();
-            //tbmabanh.Text = busbanh.SinhMaBanh();
-            Nut(false);
-            them = true;
-        }
-
-        private void btsua_Click(object sender, EventArgs e)
-        {
-            if (tbmabanh.Text == "")
+            dgvProduct.Rows.Clear();
+            dgvProduct.Refresh();
+            productTypeNameList.Clear();
+            if (busProduct.convertDatatable2Dict().Count > 0)
             {
-                MessageBox.Show("Điền vào mã bánh cần sửa!", "Thông báo");
-                tbmabanh.Focus();
+                this.statusLabel.Visible = false;
+
+                foreach (KeyValuePair<string, ProductsModel> product in busProduct.convertDatatable2Dict())
+                {
+                    ProductTypeModel productType = busProductType.convertDatatable2Dict()[product.Value.productTypeId];
+                    dgvProduct.Rows.Add(product.Key, product.Value.productName, productType.productTypeName);
+                    productTypeNameList.Add(productType.productTypeName);
+                }
+                setDataDetail(0);
             }
             else
             {
-                DataTable dt = new DataTable();
-                //dt = busbanh.KiemtraMabanh(tbmabanh.Text);
-                if (dt.Rows.Count == 0)
-                {
-                    MessageBox.Show("Mã bánh không tồn tại!", "Thông báo");
-                    tbmabanh.Focus();
-                }
-                else
-                {
-                    Nut(false);
-                    them = false;
-                    tbmabanh.Text = dt.Rows[0]["Mabanh"].ToString();
-                    tbtenbanh.Text = dt.Rows[0]["Tenbanh"].ToString();
-                    cbmaloaibanh.Text = dt.Rows[0]["Maloaibanh"].ToString();
-                    //tbhandung.Text = dt.Rows[0]["Hansudung"].ToString();
-                    tbGiaNhap.Text = dt.Rows[0]["Gia"].ToString();
-                }
+                this.statusLabel.Visible = true;
+                setDataDetailNull();
             }
         }
 
-        private void btluu_Click(object sender, EventArgs e)
-        {/*
-            if (them == true)
+        private void setData2ProductTypeCombobox(List<string> productTypeNameList)
+        {
+            for (int i = 0; i < productTypeNameList.Count; i++)
+                this.productTypeCombobox.Items.Add(productTypeNameList.ElementAt(i));
+        }
+
+        private void dgvProduct_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.setDataDetail(dgvProduct.CurrentCell.RowIndex);
+        }
+
+        private void setDataDetail(int index)
+        {
+            ProductsModel productModel          = busProduct.convertDatatable2Dict().ElementAt(index).Value;
+            ProductTypeModel productType        = busProductType.convertDatatable2Dict()[productModel.productTypeId];
+            this.productIdText.Text             = productModel.productId.Trim();
+            this.productNameText.Text           = productModel.productName.Trim();
+            this.productNoticeText.Text         = productModel.productNotice.Trim();
+            this.productPurcharsePriceText.Text = productModel.productPurchasePrice.ToString().Trim();
+            this.productRetailPriceText.Text    = productModel.productRetailPrice.ToString().Trim();
+            this.productUnit.Text               = productModel.productUnit.ToString().Trim();
+            this.productWholePriceText.Text     = productModel.productWholePrice.ToString().Trim();
+            this.productAmount.Text             = productModel.productAmount.ToString().Trim();
+            this.setDataProductTypeCombobox(productType.productTypeName);
+        }
+
+        private void setDataDetailWithProductTypeId(string productTypeId, int index)
+        {
+            ProductsModel productModel = busProduct.convertDatatableWithproductType2Dict(productTypeId).ElementAt(index).Value;
+            ProductTypeModel productType = busProductType.convertDatatable2Dict()[productModel.productTypeId];
+            this.productIdText.Text = productModel.productId.Trim();
+            this.productNameText.Text = productModel.productName.Trim();
+            this.productNoticeText.Text = productModel.productNotice.Trim();
+            this.productPurcharsePriceText.Text = productModel.productPurchasePrice.ToString().Trim();
+            this.productRetailPriceText.Text = productModel.productRetailPrice.ToString().Trim();
+            this.productUnit.Text = productModel.productUnit.ToString().Trim();
+            this.productWholePriceText.Text = productModel.productWholePrice.ToString().Trim();
+            this.productAmount.Text = productModel.productAmount.ToString().Trim();
+            this.setDataProductTypeCombobox(productType.productTypeName);
+        }
+
+        private void setDataProductTypeCombobox(string productType)
+        {
+            this.productTypeCombobox.Text = productType;
+            this.productTypeCombobox.Enabled = false;
+        }
+
+        private void setDataDetailNull()
+        {
+            this.productIdText.Text             = "";
+            this.productNameText.Text           = "";
+            this.productNoticeText.Text         = "";
+            this.productPurcharsePriceText.Text = "";
+            this.productRetailPriceText.Text    = "";
+            this.productUnit.Text               = "";
+            this.productWholePriceText.Text     = "";
+            this.productAmount.Text             = "";
+        }
+
+        private void setDataForProductId(string productType)
+        {
+            AutoCompleteStringCollection data = new AutoCompleteStringCollection();
+            if (productType.Equals("All"))
             {
-                if (KiemTraThem())
+                foreach (KeyValuePair<string, ProductsModel> product in busProduct.convertDatatable2Dict())
                 {
-                    Banh banh = new Banh(tbmabanh.Text, tbtenbanh.Text, cbmaloaibanh.Text, int.Parse(tbhandung.Text), float.Parse(tbGiaNhap.Text));
-                    if (busbanh.Them(banh))
-                    {
-                        MessageBox.Show("Thêm mới thành công!", "Thông báo");
-                        LoadData();
-                        TextBNull();
-                        Nut(true);
-                    }
-                    else
-                        MessageBox.Show("Thêm mới thất bại", "Thông báo");
+                    string productId = product.Key.Trim();
+                    data.Add(productId);
                 }
+            }
+            else if (busProduct.convertDatatableWithproductType2Dict(productType).Count > 0)
+            {
+                foreach (KeyValuePair<string, ProductsModel> product in busProduct.convertDatatableWithproductType2Dict(productType))
+                {
+                    string employId = product.Key.Trim();
+                    data.Add(employId);
+                }
+            }
+            searchProductId.AutoCompleteCustomSource = data;
+        }
+
+        private void setDataForProductName(string productType)
+        {
+            AutoCompleteStringCollection data = new AutoCompleteStringCollection();
+            if (productType.Equals("All"))
+            {
+                foreach (KeyValuePair<string, ProductsModel> product in busProduct.convertDatatable2Dict())
+                {
+                    string productName = product.Value.productName.Trim();
+                    data.Add(productName);
+                }
+            }
+            else if (busProduct.convertDatatableWithproductType2Dict(productType).Count > 0)
+            {
+                foreach (KeyValuePair<string, ProductsModel> product in busProduct.convertDatatableWithproductType2Dict(productType))
+                {
+                    string employName = product.Value.productName.Trim();
+                    data.Add(employName);
+                }
+            }
+            searchProductName.AutoCompleteCustomSource = data;
+        }
+
+        public void setData2ProductTypeText()
+        {
+            AutoCompleteStringCollection data = new AutoCompleteStringCollection();
+            if (busProductType.convertDatatable2Dict().Count > 0)
+            {
+                this.searchProductType.Items.Add("All");
+                data.Add("All");
+                foreach (KeyValuePair<string, ProductTypeModel> productType in busProductType.convertDatatable2Dict())
+                {
+                    string quarterName = productType.Value.productTypeName.Trim();
+                    this.searchProductType.Items.Add(quarterName);
+                    this.searchProductType.SelectedIndex = 0;
+                    data.Add(quarterName);
+                }
+                searchProductType.AutoCompleteCustomSource = data;
+            }
+        }
+
+        private void searchProductType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (searchProductType.SelectedIndex > 0)
+            {
+                ProductTypeModel productType = busProductType.convertDatatable2Dict().ElementAt(searchProductType.SelectedIndex - 1).Value;
+                setDataForProductName(productType.productTypeId);
+                setDataForProductId(productType.productTypeId);
+                loadDataWithProductType2DatagridView(productType.productTypeId);
             }
             else
             {
-                if (KiemTraThem())
-                {
-                    Banh banh = new Banh(tbmabanh.Text, tbtenbanh.Text, cbmaloaibanh.Text, int.Parse(tbhandung.Text), float.Parse(tbGiaNhap.Text));
-                    if (busbanh.Sua(banh))
-                    {
-                        MessageBox.Show("Sửa thông tin bánh thành công!", "Thông báo");
-                        LoadData();
-                        TextBNull();
-                        Nut(true);
-                    }
-                    else
-                        MessageBox.Show("Sửa thông tin bánh thất bại", "Thông báo");
-                }
-            }*/
+                loadData2DatagridView();
+            }
+            this.searchProductName.Text = "";
+            this.searchProductId.Text = "";
         }
 
-        private void bthuy_Click(object sender, EventArgs e)
+        private void loadDataWithProductType2DatagridView(string productTypeId)
         {
-            Nut(true);
-            TextBNull();
-        }
-
-        private void btxoa_Click(object sender, EventArgs e)
-        {
-            if (tbmabanh.Text == "")
+            dgvProduct.Rows.Clear();
+            dgvProduct.Refresh();
+            productTypeNameList.Clear();
+            if (busProduct.convertDatatableWithproductType2Dict(productTypeId).Count > 0)
             {
-                MessageBox.Show("Điền vào mã bánh cần xóa!", "Thông báo");
-                tbmabanh.Focus();
+                this.statusLabel.Visible = false;
+
+                foreach (KeyValuePair<string, ProductsModel> product in busProduct.convertDatatableWithproductType2Dict(productTypeId))
+                {
+                    ProductTypeModel productType = busProductType.convertDatatable2Dict()[product.Value.productTypeId];
+                    dgvProduct.Rows.Add(product.Key, product.Value.productName, productType.productTypeName);
+                    productTypeNameList.Add(productType.productTypeName);
+                }
+                setDataDetailWithProductTypeId(productTypeId, 0);
             }
             else
             {
-                DataTable dt = new DataTable();
-                //dt = busbanh.KiemtraMabanh(tbmabanh.Text);
-                if(dt.Rows.Count==0)
-                {
-                    MessageBox.Show("Mã bánh cần xóa không tồn tại!", "Thông báo");
-                    tbmabanh.Focus();
-                }
-                else
-                    if (DialogResult.OK == MessageBox.Show("Bạn có muốn xóa bánh có mã " + tbmabanh.Text + " không!", "Thông báo", MessageBoxButtons.OKCancel))
-                    {
-                        if (busbanh.delete(tbmabanh.Text) == true)
-                        {
-                            TextBNull();
-                            MessageBox.Show("Xoá thành công!", "Thông báo");
-                            LoadData();
-                        }
-                        else
-                            MessageBox.Show("Xóa thất bại!", "Thông báo");
-                    }
+                this.statusLabel.Visible = true;
+                setDataDetailNull();
             }
         }
-
-        private void cbmaloaibanh_TextChanged(object sender, EventArgs e)
-        {
-            //DataTable dt = busbanh.KiemtraMaloai(cbmaloaibanh.Text);
-            //if (dt.Rows.Count == 0)
-            //{
-            //}
-            //else
-            //{
-            //    //tbtenloaibanh.Text = dt.Rows[0]["Tenloai"].ToString();
-            //}
-        }
-
-        private void dgbanh_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int i = e.RowIndex;
-            DataTable dt;
-            dt = busbanh.getAllData();
-            try
-            {
-                tbmabanh.Text = dt.Rows[i]["Mabanh"].ToString();
-                tbtenbanh.Text = dt.Rows[i]["Tenbanh"].ToString();
-                //tbtenloaibanh.Text = dt.Rows[i]["Tenloai"].ToString();
-                cbmaloaibanh.Text = dt.Rows[i]["Maloaibanh"].ToString();
-                tbGiaNhap.Text = dt.Rows[i]["Gia"].ToString();
-                //tbhandung.Text = dt.Rows[i]["Hansudung"].ToString();
-            }
-            catch
-            {
-                TextBNull();
-            }
-        }
-
     }
 }
